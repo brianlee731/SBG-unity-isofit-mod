@@ -1,0 +1,22 @@
+# Requires GDAL:
+# conda create -y --name sister python=3.8
+# source activate sister
+#conda install -y gdal
+#conda install -y -c conda-forge gfortran awscli
+#conda install -y -c anaconda make
+#mkdir 6s; cd 6s
+#wget https://salsa.umd.edu/files/6S/6sV2.1.tar
+#tar xvf 6sV2.1.tar
+#sed -i 's/FFLAGS=  $(EXTRA)/FFLAGS=  $(EXTRA) -std=legacy/' Makefile
+#make
+#cd ..
+#https://avng.jpl.nasa.gov/pub/PBrodrick/emulator/sRTMnet_v120.h5
+#wget https://avng.jpl.nasa.gov/pub/PBrodrick/emulator/sRTMnet_v120_aux.npz
+# pip install git+https://github.com/isofit/isofit.git@v2.9.8
+
+git+https://github.com/EnSpec/sister@1.3.1
+git+https://github.com/EnSpec/hytools.git@1.5.0
+papermill
+unity-sds-client==0.2.1
+netCDF4
+tabulate
