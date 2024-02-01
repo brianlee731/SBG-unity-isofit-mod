@@ -1,4 +1,4 @@
-# SBG-Unity-Preprocess
+# SBG-Unity-isofit
 
-unity implementation of sister/MAAP preprocess step.
+unity implementation of sister/MAAP isofit step.
 
