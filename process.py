@@ -274,7 +274,7 @@ cmd = [
 print("Running apply_oe command: " + " ".join(cmd))
 
 start_time = time.time()
-#subprocess.run(" ".join(cmd), shell=True)
+subprocess.run(" ".join(cmd), shell=True)
 end_time = time.time()
 
 
