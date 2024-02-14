@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # SBG ISOFIT Application Notebook
-# 
-
-# In[4]:
-
 import glob
 import json
 import os
@@ -42,19 +37,16 @@ from unity_sds_client.resources.data_file import DataFile
 
 
 # The defaults used here generally relflect a local or jupyter environment; they are replaced with "runtime" values when run in the system.
-input_stac_collection_file = '/unity/ads/input_collections/SBG-L1B-PRE/catalog.json' # type: stage-in
-output_stac_catalog_dir    = '/unity/ads/outputs/SBG-L2A-RFL/process_results'                    # type: stage-out
-
-# pre-process variables
-output_collection="SBG-L2A-RFL"
-crid = "001"
-cores=8
+input_stac_collection_file = sys.argv[1] #'/unity/ads/input_collections/SBG-L1B-PRE/catalog.json' # type: stage-in
+output_stac_catalog_dir    = sys.argv[2] #'/unity/ads/outputs/SBG-L2A-RFL/process_results'                    # type: stage-out
+output_collection= sys.argv[3] #"SBG-L2A-RFL" 
+crid = sys.argv[3] #"001"
+cores= int(sys.argv[5]) #8
 segmentation_size=50
-tmp_work = '/unity/ads/temp/'
+tmp_work = './temp/'
 
 
 
-# In[6]:
 
 
 tmp_work = tmp_work.rstrip("/")
