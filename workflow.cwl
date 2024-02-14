@@ -3,8 +3,8 @@
 #cwltool --no-match-user  workflow.cwl --download_dir .
 
 class: CommandLineTool
-id: "BAMStats"
-label: "BAMStats tool"
+id: "unity-isofit"
+label: "emit isofit"
 cwlVersion: v1.2
 
 requirements:
@@ -13,12 +13,15 @@ requirements:
 
 
 arguments:
-- $(inputs.download_dir.path)/stage-in-results.json
-- $(runtime.outdir)/process_output
+- $(inputs.download_dir.path)/$(inputs.catalog_name)
+- $(runtime.outdir)
 - $(inputs.crid)
 - $(inputs.output_collection)
 - $(inputs.cores)
 inputs:
+  catalog_name:
+    type: string
+    default: stage-in-results.json
   crid:
     default: '001'
     type: string
