@@ -39,13 +39,14 @@ from unity_sds_client.resources.data_file import DataFile
 # The defaults used here generally relflect a local or jupyter environment; they are replaced with "runtime" values when run in the system.
 input_stac_collection_file = sys.argv[1] #'/unity/ads/input_collections/SBG-L1B-PRE/catalog.json' # type: stage-in
 output_stac_catalog_dir    = sys.argv[2] #'/unity/ads/outputs/SBG-L2A-RFL/process_results'                    # type: stage-out
-output_collection= sys.argv[3] #"SBG-L2A-RFL" 
-crid = sys.argv[3] #"001"
-cores= int(sys.argv[5]) #8
+output_collection= sys.argv[5] #"SBG-L2A-RFL" 
+emulator_path = sys.argv[3]
+crid = sys.argv[4] #"001"
+cores= int(sys.argv[6]) #8
 segmentation_size=50
 tmp_work = './temp/'
 
-
+print("emulator: "+emulator_path)
 
 
 
@@ -255,7 +256,8 @@ cmd = [
     "--presolve=1",
     "--analytical_line=0",
     "--empirical_line=1",
-    "--emulator_base="+str(sister_isofit_dir)+"/sRTMnet_v120.h5",
+    "--emulator_base="+emulator_path, 
+    #str(sister_isofit_dir)+"/sRTMnet_v120.h5",
     f"--n_cores={cores}",
     f"--wavelength_path={wavelengths_path}",
     f"--surface_path={surface_model_path}",
