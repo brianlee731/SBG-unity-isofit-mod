@@ -11,8 +11,8 @@ run mkdir s6 && cd s6 && wget --no-check-certificate https://salsa.umd.edu/files
 workdir /app
 run git clone https://github.com/isofit/isofit.git -b v2.9.8; cd isofit; pip install -e .
 run pip install hy_tools_lite==1.1.1 Pillow==9.2.0 ray==1.9.2 pystac==1.8.4 unity_sds_client==0.3.0
-env SIXS_DIR=/app/6s
+env SIXS_DIR=/app/s6
 workdir /app
-
+copy surface_model surface_model/.
 copy process.py .
 #ENTRYPOINT ["python", "process.py"]

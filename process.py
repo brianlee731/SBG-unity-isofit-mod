@@ -44,7 +44,7 @@ emulator_path = sys.argv[3]
 crid = sys.argv[4] #"001"
 cores= int(sys.argv[6]) #8
 segmentation_size=50
-tmp_work = './temp/'
+tmp_work = '/tmp/'
 
 print("emulator: "+emulator_path)
 
@@ -138,12 +138,8 @@ def update_header_descriptions(hdr_path, description):
     envi.write_envi_header(hdr_path, hdr)
 
 
-# In[9]:
-
-
-# Define paths and variables
 from pathlib import Path
-sister_isofit_dir = Path('.')
+sister_isofit_dir = Path('/app')
 #os.path.realpath(__file__)
 isofit_dir = os.path.join(os.path.dirname(sister_isofit_dir),sister_isofit_dir.name ,"isofit")
 isofit_dir
@@ -187,9 +183,13 @@ print("TEMP BASENAME: " + temp_basename)
 
 # In[11]:
 
+if not os.path.exists(tmp_work):
+    #os.mkdirs(output_stac_catalog_dir, exist_ok=True)
+    import pathlib
+    pathlib.Path(tmp_work).mkdir(parents=True, exist_ok=True)
+
 
 #Temporary input filenames without .bin extension
-    
 rdn_img_path = f"{tmp_work}/{temp_basename}"
 rdn_hdr_path = f"{tmp_work}/{temp_basename}.hdr"
 loc_img_path = f"{tmp_work}/{temp_basename}_LOC"
@@ -226,13 +226,6 @@ print("Generating surface model using work/surface.json config")
 subprocess.run(f"cp {sister_isofit_dir}/surface_model/* {tmp_work}/", shell=True)
 surface_model_path = tmp_work+"/surface.mat"
 surface_model(surface_config)
-
-
-# In[14]:
-
-
-os.environ['SIXS_DIR'] = "/home/ssm-user/SBG-unity-isofit/6s"
-print(str(sister_isofit_dir) + "/6s")
 
 
 # In[15]:
