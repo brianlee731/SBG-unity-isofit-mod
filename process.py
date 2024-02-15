@@ -355,7 +355,7 @@ dataset.add_data_file(DataFile("text/json",os.path.join(output_stac_catalog_dir,
 
 # the future metadata file needs to be added to the STAC as well
     # will eventually be moved into the to_stac() function
-dataset.add_data_file(DataFile("metadata", output_stac_catalog_dir + '/' +  name +'.json' ))
+dataset.add_data_file(DataFile("text/json", output_stac_catalog_dir + '/' +  name +'.json', ["metadata"]))
 
 
 # Add the dataset to the collection
