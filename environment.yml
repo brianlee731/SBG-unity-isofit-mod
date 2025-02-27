@@ -253,6 +253,7 @@ dependencies:
       - tomli==2.0.1
       - typing-extensions==4.9.0
       - tzdata==2023.4
+      - unity-sds-client
       - werkzeug==3.0.1
       - wrapt==1.16.0
       - xxhash==3.4.1
