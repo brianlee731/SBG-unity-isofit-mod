@@ -213,11 +213,13 @@ dependencies:
       - matplotlib==3.7.4
       - msgpack==1.0.7
       - ndsplines==0.1.5
+      - netCDF4
       - networkx==3.1
       - oauthlib==3.2.2
       - opt-einsum==3.3.0
       - packaging==23.2
       - pandas==2.0.3
+      - papermill
       - pep8==1.7.1
       - pillow==9.2.0
       - pkgutil-resolve-name==1.3.10
@@ -241,6 +243,7 @@ dependencies:
       - scikit-learn==1.3.2
       - scipy==1.10.1
       - spectral==0.23.1
+      - tabulaten
       - tensorboard==2.11.2
       - tensorboard-data-server==0.6.1
       - tensorboard-plugin-wit==1.8.1
