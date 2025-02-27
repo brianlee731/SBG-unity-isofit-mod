@@ -123,6 +123,7 @@ dependencies:
   - numpy=1.24.4=py38h59b608b_0
   - openjpeg=2.5.0=h488ebb8_3
   - openssl=3.2.1=hd590300_0
+  - papermill
   - pcre2=10.42=hcad00b1_0
   - pip=23.3.2=pyhd8ed1ab_0
   - pixman=0.43.2=h59595ed_0
@@ -172,5 +173,4 @@ dependencies:
   - xz=5.2.6=h166bdaf_0
   - zlib=1.2.13=hd590300_5
   - zstd=1.5.5=hfc55251_0
-  - papermill=2.5.0
 prefix: /opt/conda/envs/sister
