@@ -9,7 +9,7 @@ run mkdir s6 && cd s6 && wget --no-check-certificate https://salsa.umd.edu/files
 #workdir s6
 #run make
 workdir /app
-run git clone https://github.com/isofit/isofit.git -b v2.9.8; cd isofit; pip install -e .
+run git clone https://github.com/brianlee731/SBG-unity-isofit-modular.git;
 run pip install hy_tools_lite==1.1.1 Pillow==9.2.0 ray==1.9.2 pystac==1.8.4 unity_sds_client==0.3.0 papermill
 env SIXS_DIR=/app/s6
 workdir /app
