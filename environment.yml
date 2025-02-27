@@ -18,9 +18,6 @@ dependencies:
   - aws-checksums=0.1.17=h7f92143_6
   - awscli=2.15.16=py38h578d9bd_0
   - awscrt=0.19.19=py38h2f589a3_2
-  - azure-core-cpp=1.11.0=h91d86a7_1
-  - azure-storage-blobs-cpp=12.10.0=h00ab1b0_0
-  - azure-storage-common-cpp=12.5.0=h94269e2_3
   - binutils_impl_linux-64=2.40=hf600244_0
   - blosc=1.21.5=h0f2a231_0
   - brotli-python=1.1.0=py38h17151c0_1
@@ -149,7 +146,6 @@ dependencies:
   - snappy=1.1.10=h9fff704_0
   - sqlite=3.44.2=h2c6b66d_0
   - sysroot_linux-64=2.12=he073ed8_16
-  - tiledb=2.19.1=h4386cac_0
   - tk=8.6.13=noxft_h4845f30_101
   - tzcode=2023d=h3f72095_0
   - uriparser=0.9.7=hcb278e6_1
