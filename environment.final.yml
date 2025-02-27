@@ -123,6 +123,7 @@ dependencies:
   - numpy=1.24.4=py38h59b608b_0
   - openjpeg=2.5.0=h488ebb8_3
   - openssl=3.2.1=hd590300_0
+  - papermill
   - pcre2=10.42=hcad00b1_0
   - pip=23.3.2=pyhd8ed1ab_0
   - pixman=0.43.2=h59595ed_0
@@ -217,7 +218,6 @@ dependencies:
       - oauthlib==3.2.2
       - opt-einsum==3.3.0
       - packaging==23.2
-      - papermill==2.5.0
       - pandas==2.0.3
       - pep8==1.7.1
       - pillow==9.2.0
