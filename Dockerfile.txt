@@ -16,5 +16,6 @@ run pip install hy_tools_lite==1.1.1 Pillow==9.2.0 ray==1.9.2 pystac==1.8.4 unit
 env SIXS_DIR=/app/s6
 workdir /app
 copy surface_model surface_model/.
-#copy process.py .
+workdir /app/SBG-unity-isofit-mod
+copy process.ipynb .
 #ENTRYPOINT ["python", "process.py"]
