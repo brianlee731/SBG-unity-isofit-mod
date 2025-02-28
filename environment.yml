@@ -1,4 +1,4 @@
-name: base
+name: isofit-mod
 channels:
   - anaconda
   - conda-forge
