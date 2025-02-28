@@ -1,5 +1,4 @@
 from continuumio/miniconda3:23.10.0-1
-run mkdir /app
 workdir /app
 run conda install -y python=3.8; conda install -y gdal; conda install -y -c conda-forge gfortran awscli;conda install -y -c anaconda make; conda clean -ay
 #run conda install -y gdal; conda clean -ay
