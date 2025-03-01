@@ -23,8 +23,6 @@ workdir /home/jovyan/
 
 copy surface_model surface_model/.
 
-workdir /home/jovyan/SBG-unity-isofit-mod
-
-copy process.ipynb .
+copy SBG-unity-isofit-mod/process.ipynb .
 
 #ENTRYPOINT ["python", "process.py"]
