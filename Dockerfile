@@ -23,7 +23,7 @@ workdir /home/jovyan/
 
 copy surface_model surface_model/.
 
-workdir /app/SBG-unity-isofit-mod
+workdir /home/jovyan/SBG-unity-isofit-mod
 
 copy process.ipynb .
 
