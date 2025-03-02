@@ -12,7 +12,6 @@ run python -m ipykernel install --user --name=ipykernel
 
 run mkdir 6s && cd 6s && wget --no-check-certificate https://salsa.umd.edu/files/6S/6sV2.1.tar && tar xvf 6sV2.1.tar && sed -i 's/FFLAGS=  $(EXTRA)/FFLAGS=  $(EXTRA) -std=legacy/' Makefile && make 
 
-workdir /home/jovyan/
 #copy 6s .
 #workdir s6
 #run make
