@@ -1,4 +1,7 @@
 from continuumio/miniconda3:23.10.0-1
+workdir /home/jovyan/work
+run chmod -R 777 /home/jovyan/
+
 workdir /home/jovyan/
 run conda install -y python=3.8; conda install -y gdal; conda install -y -c conda-forge gfortran awscli;conda install -y -c anaconda make; conda clean -ay
 
@@ -10,7 +13,7 @@ run python -m ipykernel install --user --name=ipykernel
 #run conda install -y -c conda-forge gfortran awscli; conda clean -ay
 #run conda install -y -c anaconda make
 
-run mkdir s6 && cd s6 && wget --no-check-certificate https://salsa.umd.edu/files/6S/6sV2.1.tar && tar xvf 6sV2.1.tar && sed -i 's/FFLAGS=  $(EXTRA)/FFLAGS=  $(EXTRA) -std=legacy/' Makefile && make 
+run mkdir 6s && cd 6s && wget --no-check-certificate https://salsa.umd.edu/files/6S/6sV2.1.tar && tar xvf 6sV2.1.tar && sed -i 's/FFLAGS=  $(EXTRA)/FFLAGS=  $(EXTRA) -std=legacy/' Makefile && make 
 
 #copy 6s .
 #workdir s6
