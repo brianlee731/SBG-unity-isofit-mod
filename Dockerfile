@@ -26,7 +26,7 @@ workdir /home/jovyan/
 #run git clone https://github.com/brianlee731/SBG-unity-isofit-mod.git
 run pip install hy_tools_lite==1.1.1 Pillow==9.2.0 ray==1.9.2 pystac==1.8.4 unity_sds_client==0.3.0 papermill
 
-env SIXS_DIR=/home/jovyan/s6
+env SIXS_DIR=/home/jovyan/6s
 
 workdir /home/jovyan/
 
