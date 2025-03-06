@@ -64,15 +64,7 @@
             "title": "SISTER_EMIT_L1B_RDN_20230810T034101_001_OBS.hdr",
             "description": "size=-1;checksumType=md5;checksum=unknown;",
             "roles": [
-              "data"
-            ]
-          },
-          "SISTER_EMIT_L1B_RDN_20230810T034101_001.png": {
-            "href": "s3://unity-dev-unity-storage/URN:NASA:UNITY:unity-nikki-1:dev:L1B_processed___001/URN:NASA:UNITY:unity-nikki-1:dev:L1B_processed___001:SISTER_EMIT_L1B_RDN_20230810T034101_001/SISTER_EMIT_L1B_RDN_20230810T034101_001.png",
-            "title": "SISTER_EMIT_L1B_RDN_20230810T034101_001.png",
-            "description": "size=-1;checksumType=md5;checksum=unknown;",
-            "roles": [
-              "browse"
+              "metadata"
             ]
           },
           "SISTER_EMIT_L1B_RDN_20230810T034101_001_LOC.bin": {
@@ -99,14 +91,6 @@
               "metadata"
             ]
           },
-          "SISTER_EMIT_L1B_RDN_20230810T034101_001.hdr": {
-            "href": "s3://unity-dev-unity-storage/URN:NASA:UNITY:unity-nikki-1:dev:L1B_processed___001/URN:NASA:UNITY:unity-nikki-1:dev:L1B_processed___001:SISTER_EMIT_L1B_RDN_20230810T034101_001/SISTER_EMIT_L1B_RDN_20230810T034101_001.hdr",
-            "title": "SISTER_EMIT_L1B_RDN_20230810T034101_001.hdr",
-            "description": "size=-1;checksumType=md5;checksum=unknown;",
-            "roles": [
-              "data"
-            ]
-          },
           "SISTER_EMIT_L1B_RDN_20230810T034101_001_OBS.bin": {
             "href": "s3://unity-dev-unity-storage/URN:NASA:UNITY:unity-nikki-1:dev:L1B_processed___001/URN:NASA:UNITY:unity-nikki-1:dev:L1B_processed___001:SISTER_EMIT_L1B_RDN_20230810T034101_001/SISTER_EMIT_L1B_RDN_20230810T034101_001_OBS.bin",
             "title": "SISTER_EMIT_L1B_RDN_20230810T034101_001_OBS.bin",
@@ -129,14 +113,6 @@
             "description": "size=-1;checksumType=md5;checksum=unknown;",
             "roles": [
               "data"
-            ]
-          },
-          "SISTER_EMIT_L1B_RDN_20230810T034101_001.cmr.xml": {
-            "href": "s3://unity-dev-unity-storage/URN:NASA:UNITY:unity-nikki-1:dev:L1B_processed___001/URN:NASA:UNITY:unity-nikki-1:dev:L1B_processed___001:SISTER_EMIT_L1B_RDN_20230810T034101_001/SISTER_EMIT_L1B_RDN_20230810T034101_001.cmr.xml",
-            "title": "SISTER_EMIT_L1B_RDN_20230810T034101_001.cmr.xml",
-            "description": "size=1761;checksumType=md5;checksum=2b6e53f27e7ae717c74dc4ecdb44dea0;",
-            "roles": [
-              "metadata"
             ]
           },
           "sRTMnet_v120.h5": {
